@@ -7,6 +7,8 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../public/css/index.css">
+    <link rel="stylesheet" href="../../public/css/menu.css">
+
 </head>
 <body>
 
@@ -15,33 +17,101 @@
         <source src="/public/video/stars.mp4" type="video/mp4">
     </video>
 
+    <nav class="nav">
+        <div class="dropdown">
+           <span id="dropdown-button" >MENU</span>
+
+           <div class="dropdown-content dropdown-content-inativo">
+               <ul class="menu">
+                   <li><a href="#intro">HOME</a></li>
+                   <li><a href="about.html">ABOUT</a></li>
+                   <li><a href="projects.html">PROJECTS</a></li>
+                   <li><a href="events.html">EVENTS</a></li>
+               <ul>
+           </div>
+       </div>
+   </nav>
+
         <div class="container">
+            <section id='intro'>
+                <img id="avatar" src="../../public/images/avatar.png" alt="avatar" width="200" height="200">
 
-            <img id="avatar" src="../../public/images/avatar.png" alt="avatar" width="200" height="200">
+                <h1>Hi, i'm Mariana</h1>
 
-            <h1>Hi, i'm Mariana</h1>
+                <p> and i'm learning how to be a good developer : ) </p>
+                
+                <div class="social-links">
+                    <a href="https://github.com/marianaccn" target="_blank">
+                        <svg class= "social-icons" version="1.0" xmlns="http://www.w3.org/2000/svg"
+                            width="45pt" height="45pt" viewBox="0 0 1200.000000 630.000000"
+                            preserveAspectRatio="xMidYMid meet">
 
-            <p> and i'm learning how to be a good developer : ) </p>
+                            <g transform="translate(0.000000,630.000000) scale(0.100000,-0.100000)" stroke="none">
+                                <path d="M5830 6069 c-695 -34 -1323 -298 -1862 -782 -262 -234 -515 -578
+                                    -682 -928 -269 -562 -350 -1207 -231 -1855 139 -753 619 -1477 1267 -1912 252
+                                    -169 670 -362 784 -362 50 0 100 26 124 65 19 31 20 49 20 337 l0 304 -72 -12
+                                    c-99 -18 -322 -17 -440 1 -168 25 -277 75 -377 175 -57 56 -71 79 -161 275
+                                    -77 166 -163 273 -282 350 -68 45 -131 117 -126 144 6 31 49 42 143 38 96 -5
+                                    129 -16 220 -71 97 -58 161 -121 232 -229 155 -236 295 -327 502 -327 107 0
+                                    193 14 290 46 l76 25 22 92 c27 111 68 198 124 261 23 26 40 48 38 50 -2 2
+                                    -44 9 -94 15 -369 48 -679 180 -885 378 -217 207 -340 518 -370 934 -27 373
+                                    56 667 257 906 l44 52 -28 83 c-25 78 -27 94 -27 258 -1 185 11 262 64 402 20
+                                    55 23 57 63 63 119 18 452 -105 689 -254 l96 -61 106 25 c412 100 891 97 1312
+                                    -6 l82 -20 94 59 c256 162 559 276 683 258 42 -7 45 -9 64 -61 32 -85 59 -203
+                                    72 -308 14 -117 1 -248 -35 -361 l-23 -74 54 -67 c163 -204 238 -414 249 -700
+                                    17 -412 -99 -820 -298 -1052 -202 -236 -551 -400 -963 -454 -49 -6 -92 -13
+                                    -94 -15 -2 -2 15 -24 38 -49 47 -51 101 -157 128 -250 15 -52 18 -129 22 -590
+                                    6 -509 7 -531 26 -565 64 -109 186 -87 570 100 185 90 380 213 535 336 120 95
+                                    380 360 476 484 436 564 643 1161 644 1856 0 612 -164 1162 -496 1662 -116
+                                    173 -223 303 -383 463 -170 170 -262 245 -461 377 -433 289 -947 464 -1430
+                                    487 -63 3 -144 7 -180 9 -36 1 -130 -1 -210 -5z"/>
+                            </g>
+                        </svg>
+                    </a>
 
-            <nav class="navigation">
-                <!-- menu <img src="" alt=""> -->
-            </nav>
-            
-            <div class="social-links">
-                <a href="https://github.com/marianaccn" target="_blank">
-                    <img class= "social-icons" src="../../public/images/github.svg" alt="github">
-                </a>
+                    <a href="https://twitter.com/mari_221b" target="_blank"> 
+                        <svg class="social-icons" version="1.0" xmlns="http://www.w3.org/2000/svg"
+                            width="20pt" height="20pt" viewBox="0 0 512.000000 512.000000"
+                            preserveAspectRatio="xMidYMid meet">
 
-                <a href="https://twitter.com/mari_221b" target="_blank"> 
-                    <img class= "social-icons" src="../../public/images/tt.svg" alt="twitter">
-                </a>
+                            <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" stroke="none">
+                                <path d="M3415 4666 c-257 -43 -457 -142 -605 -303 -198 -214 -310 -545 -310
+                                -918 l0 -97 -42 7 c-528 85 -940 220 -1326 436 -257 144 -456 294 -665 501
+                                -121 121 -131 128 -168 128 -55 0 -81 -31 -112 -133 -40 -128 -50 -193 -50
+                                -322 1 -230 73 -433 229 -640 60 -80 156 -180 227 -237 l49 -38 -79 0 c-90 0
+                                -176 19 -258 55 -139 61 -167 23 -125 -168 53 -241 195 -460 392 -607 95 -70
+                                245 -149 346 -181 96 -31 78 -37 -131 -46 -156 -6 -161 -7 -191 -34 -44 -39
+                                -42 -85 9 -169 135 -223 443 -423 777 -505 56 -14 116 -29 133 -33 l29 -8 -84
+                                -65 c-325 -253 -730 -380 -1252 -396 -115 -3 -208 -9 -208 -13 0 -20 135 -89
+                                330 -168 1193 -482 2355 -313 3275 479 662 569 1046 1409 1048 2290 l0 196 36
+                                19 c76 40 230 165 314 254 91 96 124 146 114 174 -9 23 -42 20 -174 -18 -116
+                                -34 -355 -88 -360 -82 -2 2 25 23 59 47 188 131 400 403 357 456 -18 21 -44
+                                16 -132 -26 -133 -62 -267 -98 -451 -121 l-88 -11 -47 44 c-110 103 -277 192
+                                -439 233 -120 31 -308 40 -427 20z"/>
+                            </g>
+                        </svg>
+                    </a>
 
-                <a href="https://www.linkedin.com/in/mariana-cavalcante-candido-755252143/" target="_blank">
-                    <img id= "icon-in" src="../../public/images/in.svg" alt="linkedin">
-                </a>
+                    <a href="https://www.linkedin.com/in/mariana-cavalcante-candido-755252143/" target="_blank">
+                        <svg id="icon-in" version="1.0" xmlns="http://www.w3.org/2000/svg"
+                            width="22pt" height="22pt" viewBox="0 0 512 512"
+                            preserveAspectRatio="xMidYMid meet">
 
-            </div>
-
+                            <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" stroke="none">
+                                <path d="M904 4606 c-236 -54 -396 -256 -397 -501 0 -148 52 -266 165 -371
+                                315 -297 839 -66 838 370 0 144 -46 261 -140 356 -30 31 -76 69 -101 83 -110
+                                65 -251 89 -365 63z"/>
+                                <path d="M3492 3319 c-253 -33 -502 -175 -642 -368 l-45 -62 -3 176 -2 175
+                                -410 0 -410 0 0 -1375 0 -1375 408 2 407 3 6 805 c6 897 3 864 76 1003 87 164
+                                235 247 443 247 179 0 311 -81 385 -234 69 -144 68 -132 72 -1024 l4 -802 422
+                                2 422 3 0 950 c0 1061 1 1040 -71 1255 -70 208 -176 352 -347 469 -178 121
+                                -468 182 -715 150z"/>
+                                <path d="M590 1865 l0 -1375 425 0 425 0 0 1375 0 1375 -425 0 -425 0 0 -1375z"/>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+            </section>
         </div>
 
         <script>
@@ -49,6 +119,17 @@
             var vid = document.getElementById("video");
             vid.playbackRate = 0.6;
     
+            const dropdownButton = document.getElementById("dropdown-button");
+            dropdownButton.addEventListener("click", function(){
+                const dropdownMenu = document.querySelector(".dropdown-content")
+                console.log( dropdownMenu.classList);
+                
+                if (dropdownMenu.classList.contains("dropdown-content-inativo")){
+                    dropdownMenu.classList.remove("dropdown-content-inativo")
+                } else {
+                    dropdownMenu.classList.add("dropdown-content-inativo")
+                }
+            });
         </script>
     </body>
 </html>

@@ -1,0 +1,48 @@
+*{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.dropdown {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 2em 2em 0;
+
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Fira Sans', 'sans-serif';
+    color: #cccdce;
+
+    letter-spacing: .025em;
+    line-height: 1.875;
+
+    text-align: left;
+    text-transform: uppercase;
+
+    cursor: pointer;
+}
+
+.dropdown-content-inativo {
+    display: none;
+}
+
+#dropdown-button:hover {
+    color: #fbe800;
+    transition: 0.5s;
+}
+
+.menu li a {
+    text-decoration: none;
+    font-family: Fira Sans;
+    color: #cccdce;
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.menu li a:hover{
+    color: #fbe800;
+    transition: 0.5s;
+}
+
