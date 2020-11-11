@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../public/css/index.css">
     <link rel="stylesheet" href="../../public/css/menu.css">
+    <link rel="stylesheet" href="../../public/scripts/script.js">
 
 </head>
 <body>
@@ -24,9 +25,9 @@
            <div class="dropdown-content dropdown-content-inativo">
                <ul class="menu">
                    <li><a href="#intro">HOME</a></li>
-                   <li><a href="about.html">ABOUT</a></li>
-                   <li><a href="projects.html">PROJECTS</a></li>
-                   <li><a href="events.html">EVENTS</a></li>
+                   <li><a href="#about">ABOUT</a></li>
+                   <li><a href="#projects">PROJECTS</a></li>
+                   <li><a href="#events">EVENTS</a></li>
                <ul>
            </div>
        </div>
@@ -38,7 +39,7 @@
 
                 <h1>Hi, i'm Mariana</h1>
 
-                <p> and i'm learning how to be a good developer : ) </p>
+                <p> and i would love to share a little more about me : ) </p>
                 
                 <div class="social-links">
                     <a href="https://github.com/marianaccn" target="_blank">
@@ -112,24 +113,53 @@
                     </a>
                 </div>
             </section>
+
+            <section id="about">
+                <p id="text"> Welcome to my first page! I'm 25 years old, i live in Sorocaba- SP and recently decided to gather some courage to change my area. <br> 
+                    Worked for 3 years in the HR and now i'm a IT student at UNIVESP, to specialize in web development. I started to develop a few months ago, it has been very challenging and rewarding at the same time, 
+                    currently i'm looking for an opportunity where i can work with web development, learn and improve my skills. 
+                </p> 
+            </section>
+
+            <section id="projects">
+                <div class="projectContainer">
+                    <div class='proffy'>
+                        <a href="https://github.com/marianaccn/proffy_nlw2" target='blank'>
+                            <img class='img' src="../../public/images/proffy.jpg" alt="Proffy">
+                        </a>
+                    </div>
+
+                    <div class="happy">
+                        <a href="https://github.com/marianaccn/happy_nlw3" target='blank'>
+                            <img class='img' src="../../public/images/happy.png" alt="Happy">
+                        </a>
+                    </div>
+
+                    <div class="resume">
+                        <a href="https://marianaccn.github.io/" target='blank'>
+                            <img class='img' src="../../public/images/currículo.png" alt="Resume">
+                        </a>
+                    </div>
+             </div>
+            </section>
+
         </div>
-
-        <script>
-
-            var vid = document.getElementById("video");
-            vid.playbackRate = 0.6;
-    
-            const dropdownButton = document.getElementById("dropdown-button");
-            dropdownButton.addEventListener("click", function(){
-                const dropdownMenu = document.querySelector(".dropdown-content")
-                console.log( dropdownMenu.classList);
-                
-                if (dropdownMenu.classList.contains("dropdown-content-inativo")){
-                    dropdownMenu.classList.remove("dropdown-content-inativo")
-                } else {
-                    dropdownMenu.classList.add("dropdown-content-inativo")
-                }
-            });
-        </script>
     </body>
+
+    <script>
+        var vid = document.getElementById("video");
+        vid.playbackRate = 0.6;
+
+        const dropdownButton = document.getElementById("dropdown-button");
+        dropdownButton.addEventListener("click", function(){
+            const dropdownMenu = document.querySelector(".dropdown-content")
+            console.log( dropdownMenu.classList);
+            
+            if (dropdownMenu.classList.contains("dropdown-content-inativo")){
+                dropdownMenu.classList.remove("dropdown-content-inativo")
+            } else {
+                dropdownMenu.classList.add("dropdown-content-inativo")
+            }
+        });
+    </script>
 </html>

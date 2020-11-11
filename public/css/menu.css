@@ -21,6 +21,7 @@
     text-transform: uppercase;
 
     cursor: pointer;
+    
 }
 
 .dropdown-content-inativo {
@@ -30,6 +31,7 @@
 #dropdown-button:hover {
     color: #fbe800;
     transition: 0.5s;
+
 }
 
 .menu li a {
