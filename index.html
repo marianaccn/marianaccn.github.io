@@ -6,8 +6,8 @@
     <title>Portfolio | </title>
 
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;1,300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../public/css/index.css">
-    <link rel="stylesheet" href="../../public/css/menu.css">
+    <link rel="stylesheet" href="./public/css/index.css">
+    <link rel="stylesheet" href="./public/css/menu.css">
 </head>
 <body>
 
@@ -33,7 +33,7 @@
 
         <div class="container">
             <section id='intro'>
-                <img id="avatar" src="../../public/images/avatar.png" alt="avatar" width="200" height="200">
+                <img id="avatar" src="./public/images/avatar.png" alt="avatar" width="200" height="200">
 
                 <h1>Hi, i'm Mariana</h1>
 
@@ -129,19 +129,19 @@
                     </div>
                     <div class='proffy'>
                         <a href="https://github.com/marianaccn/proffy_nlw2" target='blank'>
-                            <img class='img' src="../../public/images/proffy.jpg" alt="Proffy">
+                            <img class='img' src="./public/images/proffy.jpg" alt="Proffy">
                         </a>
                     </div>
 
                     <div class="happy">
                         <a href="https://github.com/marianaccn/happy_nlw3" target='blank'>
-                            <img class='img' src="../../public/images/happy.png" alt="Happy">
+                            <img class='img' src="./public/images/happy.png" alt="Happy">
                         </a>
                     </div>
 
                     <div class="resume">
-                        <a href="https://marianaccn.github.io/" target='blank'>
-                            <img class='img' src="../../public/images/currículo.png" alt="Resume">
+                        <a href="https://github.com/marianaccn/resume" target='blank'>
+                            <img class='img' src="./public/images/currículo.png" alt="Resume">
                         </a>
                     </div>
                 </div>
@@ -163,20 +163,5 @@
             </section>
         </div>
     </body>
-    <script>
-        var vid = document.getElementById("video");
-        vid.playbackRate = 0.6;
-
-        const dropdownButton = document.getElementById("dropdown-button");
-        dropdownButton.addEventListener("click", function(){
-            const dropdownMenu = document.querySelector(".dropdown-content")
-            console.log( dropdownMenu.classList);
-            
-            if (dropdownMenu.classList.contains("dropdown-content-inativo")){
-                dropdownMenu.classList.remove("dropdown-content-inativo")
-            } else {
-                dropdownMenu.classList.add("dropdown-content-inativo")
-            }
-        });
-    </script>
+    <script src="./public/script.js"></script>
 </html>
