@@ -2,14 +2,13 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  display: block;
 }
 
-body {
+body{
   overflow: auto;
 }
 
-#video {
+#video{
   position: fixed;
   right: 0;
   bottom: 0;
@@ -20,14 +19,18 @@ body {
   z-index: -1;
 }
 
-.container {
+.container{
   bottom: 0;
   color: #f1f1f1;
   width: 100%;
   height: 100%;
 }
 
-#avatar {
+#intro{
+  padding-top: 20px;
+}
+
+#avatar{
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -40,7 +43,7 @@ body {
 
 }
 
-h1 {
+h1{
   font-family: "Fira Sans", sans-serif;
   font-size: 28.8px;
   text-align: center;
@@ -48,7 +51,7 @@ h1 {
   padding-top: 40px;
 }
 
-p {
+p{
   font-family: "Fira Sans", sans-serif;
   font-size: 16.2px;
   font-style: italic;
@@ -61,26 +64,27 @@ p {
   display: block;
 }
 
-.social-links {
+.social-links{
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 50px;
 }
 
-.social-icons {
+.social-icons{
   margin-right: 10px;
   cursor: pointer;
   fill: #cccdce;
 }
 
-#icon-in {
+#icon-in{
   margin-left: 9px;
   cursor: pointer;
   fill: #cccdce;
   
 }
 
-.social-icons:hover {
+.social-icons:hover{
   fill: #fbe800;
   transition: fill .4s;
 
@@ -89,7 +93,7 @@ p {
   transform: scale(1.1);
 }
 
-#icon-in:hover {
+#icon-in:hover{
   fill: #fbe800;
   transition: fill .4s;
 
@@ -98,34 +102,50 @@ p {
   transform: scale(1.1);
 }
 
-#about {
+#about{
   display: flex;
   position: relative;
   align-items: center;
   justify-content: center;
-  margin: 0 -1px;
-  margin-top: 115px;
-
+  padding-top: 100px;
 }
 
-
-.text-about{
+.container-about{
   width: 800px;
   height: auto;
-  padding: 3em;
-  display: inline-flex;
-  font: 1.25em/1.5 "Fira Sans",sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background: rgba(255,255,255,0.1);
 }
 
-#projects {
+.title-about{
+  font-family: "Fira Sans",sans-serif;
+  font-size: 25px;
+  color: #fbe800;
+  margin-top: 1em;
+  display: inline-block;
+}
+
+.text-about{
+  font: 1.20em/1.5 "Fira Sans",sans-serif;
+  font-size: 16.2px;
+  font-style: italic;
+  margin: 3em;
+  margin-top: 1px;
+  display: inline-flex;
+}
+
+#projects{
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 115px;
+  padding-top: 30px;
 }
 
-.projectContainer {
+.projectContainer{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -133,10 +153,19 @@ p {
   padding: 2em;
   flex-wrap: wrap;
   background: rgba(255,255,255,0.1);
-
 }
 
-.img {
+.title-projects{
+  width: 800px;
+  font-family: "Fira Sans",sans-serif;
+  font-size: 18px;
+  color: #fbe800;
+  text-align: center;
+  margin: 1em 0;
+  display: inline-block;
+}
+
+.img{
   width: 100%;
   height: 200px;
   border-radius: 5px;
@@ -164,20 +193,37 @@ p {
   align-items: center;
   justify-content: center;
   margin-top: 115px;
+  margin-bottom: 100px;
 }
 
-.container-events li {
+.container-events{
   width: 800px;
   height: auto;
-  padding: 0.6em;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 3em;
+  background: rgba(255,255,255,0.1);
+}
+
+.title-events{
+  font-family: "Fira Sans",sans-serif;
+  font-size: 25px;
+  color: #fbe800;
+  text-align: center;
+  margin: 1em 0;
+}
+
+.container-events li {
+  display:list-item;
+  list-style-type: disc;
+  list-style-position: inside;
+  padding: 0.6em;
   font-size: 16.2px;
   font-family: "Fira Sans",sans-serif;
   font-style: italic;
-  background: rgba(255,255,255,0.1);
 }
+
+
 
 
 
