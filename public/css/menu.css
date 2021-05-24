@@ -50,12 +50,12 @@
 
 @media(max-width:759px){
 
-.dropdown {
-    font-size: 14px;
-}    
+    .dropdown {
+        font-size: 14px;
+    }    
 
-.menu li a {
-    font-size: 14px; 
-}
+    .menu li a {
+        font-size: 14px; 
+    }
 }
 
